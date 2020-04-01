@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online User ToDo:List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <script src="@Url.Content("~/Scripts/vendor/jquery/jquery-3.2.1.min.js")"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/vendor/bootstrap/css/bootstrap.min.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/fonts/font-awesome-4.7.0/css/font-awesome.min.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/fonts/Linearicons-Free-v1.0.0/icon-font.min.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/vendor/animate/animate.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/vendor/css-hamburgers/hamburgers.min.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/vendor/select2/select2.min.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/util.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/main.css")">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    
+    @*@System.Web.Optimization.Styles.Render("~/Content/css")*@
+    <style>
+        .container-home {
+            width: 100%;
+            min-height: 20px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: #0250c5;
+            background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+            background: -o-linear-gradient(bottom, #0250c5, #d43f8d);
+            background: -moz-linear-gradient(bottom, #0250c5, #d43f8d);
+            background: linear-gradient(bottom, #0250c5, #d43f8d);
+            position: relative;
+            z-index: 1;
+        }
+
+        span.field-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-home">
+            <span style="color:white;">Online User ToDo:Lists</span>
+               
+        </div>
+         @RenderBody()
+    </div>
+
+
+    @*@System.Web.Optimization.Scripts.Render("~/bundles/js")*@
+
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script src="@Url.Content("~/Scripts/vendor/bootstrap/js/popper.js")"></script>
+    <script src="@Url.Content("~/Scripts/vendor/bootstrap/js/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/vendor/select2/select2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/main.js")"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+</body>
+</html>
